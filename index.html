@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is just a (very bland) placeholder.">
-    <meta name="author" content="Aaron Horler">
-    <meta name="url" content="https://aaronhorler.com">
+    <meta name="description" content="I write songs calling for changes, to right wrongs, and to make our world better.">
+    <meta name="author" content="Chloe Horler">
+    <meta name="url" content="https://chloehorler.com/">
 
     <!-- Privacy -->
     <meta name="referrer" content="no-referrer">
     <meta http-equiv="x-dns-prefetch-control" content="off">
 
-    <title>Aaron Horler</title>
+    <title>Chloe Horler</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,11 +42,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#102a45">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#102a45">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -64,7 +65,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Aaron Horler</a>
+                <a class="navbar-brand" href="#page-top">Chloe Horler</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,13 +75,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Articles</a>
+                        <a href="#portfolio">Music</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#reviews">Reviews</a>
                     </li>
                 </ul>
             </div>
@@ -94,12 +98,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img id="profile" class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Aaron Horler</span>
+                        <span class="name">Chloe Horler</span>
                         <hr class="star-light">
-                        <span class="skills">Welcome to my (very bland) placeholder.</span>
-                        <!-- All placeholders are bland... -->
+                        <span class="skills">Singer - Songwriter</span>
                     </div>
                 </div>
             </div>
@@ -111,23 +114,71 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Articles</h2>
+                    <h2>Music</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p><a href="articles/apache.html">Apache and Let's Encrypt best practices.</a></p>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/kombi-van.png" class="img-responsive" alt="">
+                    </a>
                 </div>
-                <div class="col-lg-4">
-                    <p><a href="articles/sendmail.html">Using Let's Encrypt with Sendmail.</a></p>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sticks-and-stones.png" class="img-responsive" alt="">
+                    </a>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p><a href="articles/php-reporturi.html">Accepting secuirty header reports using PHP.</a></p>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/save-me.png" class="img-responsive" alt="">
+                    </a>
                 </div>
-                <div class="col-lg-4">
-                    <p><a href="articles/openpgpjs.html">Creating a JavaScript PGP contact form.</a></p>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/god-damn-fears.png" class="img-responsive" alt="">
+                    </a>
                 </div>
+                <!-- <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/save-me.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div> -->
             </div>
         </div>
     </section>
@@ -137,22 +188,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>About Me</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>I am a third year Bachelor of Information Technology student at RMIT University.</p>
-                    <p>I've previously completed the Certificate IV in Information Technology Networking, and the Associate Degree of Information Technology - both at RMIT.</p>
+                    <p>I write songs that are sometimes fun sometimes serious but always from the heart.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>My primary interests are information security, GNU/Linux, and web development.</p>
-                    <p>Use the button below to test my web server implementation.</p>
+                    <p>Singer/songwriter/guitarist from Melbourne!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://observatory.mozilla.org/analyze.html?host=aaronhorler.com" class="btn btn-lg btn-outline">
-                        <i class="fa fa-server"></i> Test this host
+                    <a href="https://www.triplejunearthed.com/artist/chloe-horler" class="btn btn-lg btn-outline">
+                        <i class="fa fa-play"></i> Triple J Unearthed
+                    </a>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="https://s3.amazonaws.com/online.flipbuilder.com/BUSKPAL/iiru/mobile/index.html#p=23" class="btn btn-lg btn-outline">
+                        <i class="fa fa-newspaper-o"></i> BUSKPAL MAGAZINE
+                    </a>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="https://www.facebook.com/chloehorlermusic" class="btn btn-lg btn-outline">
+                        <i class="fa fa-facebook-official"></i> Facebook Page
                     </a>
                 </div>
             </div>
@@ -190,20 +249,33 @@
                                 <label>Message</label>
                                 <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
-                                <a href="public.asc" target="_blank">PGP public key</a>
-                                
                             </div>
                         </div>
                         <br>
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <a id="btnEncrypt" class="btn btn-success btn-lg" title="Optionally, you may encrypt your message using OpenPGP before you send it."><i class="fa fa-fw fa-lock"></i>Encrypt</a>
-                                <button id="btnSubmit" type="submit" class="btn btn-success btn-lg" title="Please don't spam me.">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facebook Review Section -->
+    <section class="success" id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Reviews</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div id="fb-root"></div>
+                <div class="fb-comments" data-href="https://chloehorler.com" data-width="100%" data-numposts="5"></div>
             </div>
         </div>
     </section>
@@ -215,25 +287,29 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p><a class="light-link" href="https://en.wikipedia.org/wiki/John_Batman">Batmania</a>.<p>
+                        <p>Melbourne, 
+                            <br>Australia.</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://github.com/aghorler" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://www.youtube.com/user/chorler" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube"></i></a>
                             </li>
                             <li>
-                                <a href="https://linkedin.com/in/aghorler" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="https://twitter.com/chloehorler" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/aghorler" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://soundcloud.com/chloe-horler" class="btn-social btn-outline"><i class="fa fa-fw fa-soundcloud"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/theperksofchloe" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>About Me</h3>
-                        <p>I am an Information Technology student.</p>
+                        <p>I write songs calling for changes, to right wrongs, and to make our world better. </p>
                     </div>
                 </div>
             </div>
@@ -242,7 +318,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Aaron Horler 2017, using <a class="light-link" href="https://github.com/aghorler/aaronhorler.com">Freelancer</a>.
+                        Copyright &copy; Chloe Horler 2017 &bull; Developed by <a href="https://aaronhorler.com/">Aaron Horler</a>.
                     </div>
                 </div>
             </div>
@@ -256,6 +332,196 @@
         </a>
     </div>
 
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Kombi Van</h2>
+                            <hr class="star-primary">
+                            <p>
+                                <iframe id="youtube" src="https://www.youtube-nocookie.com/embed/Gq4Ux-vGHjo?rel=0" frameborder="0" allowfullscreen></iframe>
+                            </p>
+                            <p>This song was written to help people ESCAPE from all of societies expectations. I just couldn't help watching everyone around me drown in their stresses, so I wrote this to remind everyone that life is not about living up to expectations! Life is about LIVING and LOVING. I think people forget that we are only here for a short amount of time.... why waste it when you could be exploring the world in a Kombi Van!!!!</p>
+                            <ul class="list-inline item-details">
+                                <li>Source:
+                                    <strong><a href="https://www.youtube.com/watch?v=Gq4Ux-vGHjo">YouTube</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>September 2016</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Sticks & Stones</h2>
+                            <hr class="star-primary">
+                            <p>
+                                <iframe id="youtube" src="https://www.youtube-nocookie.com/embed/UF45YmEP6zY?rel=0" frameborder="0" allowfullscreen></iframe>
+                            </p>
+                            <p>This song is about a young girl who struggles to fit in with her family. She feels as though everything around her is tumbling down. All she wants is to feel something, but she's always left feeling nothing.</p>
+                            <ul class="list-inline item-details">
+                                <li>Source:
+                                    <strong><a href="https://www.youtube.com/watch?v=UF45YmEP6zY">YouTube</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>September 2016</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Save Me</h2>
+                            <hr class="star-primary">
+                            <p>
+                                <video id="youtube" controls>
+                                    <source src="mp4/save-me.mp4" type="video/mp4">
+                                </video>
+                            </p>
+                            <p>Desc goes here.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong>May 2017</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>God Damn Fears</h2>
+                            <hr class="star-primary">
+                            <p>
+                                <video id="youtube" controls>
+                                    <source src="mp4/god-damn-fears.mp4" type="video/mp4">
+                                </video>
+                            </p>
+                            <p>This song is about poor decisions. Exploring a father who doesn't know how to be a father.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong>May 2017</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Save Me</h2>
+                            <hr class="star-primary">
+                            <p>
+                                No content.
+                            </p>
+                            <p>Description goes here.</p>
+                            <ul class="list-inline item-details">
+                                <li>Source:
+                                    Null
+                                </li>
+                                <li>Date:
+                                    <strong>May 2017</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>More coming soon...</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>More content coming soon!</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -267,7 +533,6 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/openpgp.min.js"></script>
     <script src="js/contact_me.min.js"></script>
 
     <!-- Theme JavaScript -->

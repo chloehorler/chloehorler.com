@@ -14,10 +14,10 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 	
 // Create the email and send the message
-$to = ''; // Removed from source for privacy reasons.
+$to = ''; //Removed from source for privacy.
 $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message\n\nIP address: " . $_SERVER['REMOTE_ADDR'];
-$headers = "From: noreply@aaronhorler.com\n";
+$headers = "From: noreply@chloehorler.com\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			

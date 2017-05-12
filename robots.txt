@@ -1,7 +1,9 @@
 User-Agent: *
 Allow: /$
-Allow: /articles
+Allow: /img/
+Allow: /mp4/
 Allow: /sitemap.xml
 Disallow: /
 
-Sitemap: https://aaronhorler.com/sitemap.xml
+Sitemap: https://chloehorler.com/sitemap.xml
+

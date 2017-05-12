@@ -6,15 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://aaronhorler.com/</loc>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://aaronhorler.com/articles/apache.html</loc>
-  <changefreq>never</changefreq>
-</url>
-<url>
-  <loc>https://aaronhorler.com/articles/sendmail.html</loc>
-  <changefreq>never</changefreq>
+  <loc>https://chloehorler.com/</loc>
+  <changefreq>monthly</changefreq>
 </url>
 </urlset>
